@@ -177,14 +177,12 @@ def kasper_run_stat(tree_seq):
     
             tree_pvalues.append(pvalue_nr_runs)
 
-
-            ar = np.array(tree_pvalues)
-            ar = ar[~np.isnan(ar)]
-            if ar.size > 1:
-                records.append(-np.log10(ar.min()))
-            else:
-                records.append(np.nan)
-            
+        ar = np.array(tree_pvalues)
+        ar = ar[~np.isnan(ar)]
+        if ar.size > 1:
+            records.append(-np.log10(ar.min()))
+        else:
+            records.append(np.nan)            
         
         tree_idx += 1
 
