@@ -1,20 +1,20 @@
-name: base
+name: tree-stats
 channels:
   - defaults
   - conda-forge
+  - kaspermunch
 dependencies:
-  - conda
-  - python=3.9
-  - python.app
-  - slurm-jupyter=2.5.4
-  - arviz=0.15.1
-  - conda-libmamba-solver
-  - vim
-  - art
-  - pygments
-  - rich
-  - textual
+  - jupyterlab
+  - nodejs
+  - scipy
+  - pytables
   - git
+  - seaborn
+  - scikit-learn
   - tqdm
-  - gh
-prefix: /Users/kmt/miniconda3
+  - multiprocess
+  - tskit
+  - msprime
+  - libcblas
+  - gsl
+  - geneinfo
