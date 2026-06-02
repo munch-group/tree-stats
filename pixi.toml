@@ -1,0 +1,24 @@
+[workspace]
+authors = ["Kasper Munch <kaspermunch@birc.au.dk>"]
+channels = ["conda-forge", "munch-group", "gwforg"]
+name = "tree-stats"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+jupyter = "*"
+nodejs = "*"
+scipy = "*"
+pytables = "*"
+seaborn = "*"
+scikit-learn = "*"
+tqdm = "*"
+multiprocess = "*"
+tskit = "*"
+geneinfo = "*"
+msprime = "*"
+libcblas = "*"
+vscodenb = ">=0.1.79,<0.2"
+gwf = ">=2.1.1,<3"
